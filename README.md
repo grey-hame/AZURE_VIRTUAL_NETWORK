@@ -31,12 +31,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name     | Function   | IP Address | Operating System |
-|----------|------------|------------|------------------|
-| Jump Box | Gateway    | 10.1.0.4   | Linux            |
-| Web-1    | Webserver  | 10.1.0.5   | Linux            |
-| Web-2    | Webserver  | 10.1.0.5   | Linux            |
-| ELK-VM   | ELK Server | 10.2.0.4   | Linux            |
+| Name     | Function   | IP Address     | Operating System |
+|----------|------------|----------------|------------------|
+| Jump Box | Gateway    | 20.120.91.119  | Linux            |
+| Web-1    | Webserver  | 10.1.0.5       | Linux            |
+| Web-2    | Webserver  | 10.1.0.6       | Linux            |
+| ELK-VM   | ELK Server | 40.83.248.118  | Linux            |
 
 ### Access Policies
 
@@ -45,7 +45,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the gateway machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 108.29.120.134
 
-Machines within the network can only be accessed by SSH from an Ansible container within the gateway VM "Jump Box" with public IP Address 20.120.91.119 and private IP address 10.1.0.4, or via a load balancer with public IP address 20.115.126.203.
+Machines within the network can only be accessed by SSH from an Ansible container within the gateway VM "Jump Box" with public IP Address 20.120.91.119 and local IP address 10.1.0.4, or via a load balancer with public IP address 20.115.126.203.
 
 
 A summary of the access policies in place can be found in the table below.
